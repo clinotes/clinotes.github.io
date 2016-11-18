@@ -13,17 +13,38 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+title: Manage notes from your command line with CLINotes
+email: mail@clinot.es
+description: Imagine a world where you would never have to leave your cozy favorite shell envorinment. Sounds pretty awesome, huh? Well, CLINotes does not solve all your problems and in fact it does not solve any problem at all.
+baseurl: ""
+url: "https://clinot.es"
+repository: clinotes/clinotes.github.io
+
+owner:
+  name: Sebastian Müller
+
+author:
+  twitter: sbstjn
+
+twitter:
+  username: sbstjn
 
 # Build settings
 markdown: kramdown
 theme: minima
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+
+sass:
+  sass_dir: 'styles'
+  style: 'compressed'

@@ -2,4 +2,53 @@
 layout: default
 ---
 
-<h1><a href="https://clinot.es">CLInot.es</a></h1>
+<section>
+  <p>Imagine a world where you would never have to leave your cozy favorite shell envorinment. Sounds pretty awesome, huh? Well, <strong class="clinotes"><span>CLI</span>Notes</strong> does not solve all your problems and in fact it does not solve any problem at all. But let's stop with the euphoric chorus of praise and get serious again:</p>
+  <p>The <strong class="clinotes"><span>CLI</span>Notes</strong> <a href="https://github.com/clinotes/server">server</a> and <a href="https://github.com/clinotes/client">client</a> are side-projects to manage notes from the command line. On a rainy sunday (not true!) a bored magician (not true!) with software development skills (maybe) was so bored, that she (who knows?) started to write a remote API server and command line tool for managing text notes.</p>
+</section>
+
+<section id="download">
+  <h2>
+    <span>Download</span>
+  </h2>
+  <p>Luckily there is already a <strong class="clinotes"><span>CLI</span>Notes</strong> server running at <a href="https://api.clinot.es/version">api.clinot.es</a> and you can just dive into downloading the <a href="https://github.com/clinotes/client">client</a> using the much-loved <a href="http://brew.sh">Homebrew</a> flow:</p>
+  <code>
+    <pre>$ > brew tap clinotes/cn
+$ > brew install cn</pre>
+  </code>
+</section>
+
+<section id="signup">
+  <h2>
+    <span>Signup</span>
+  </h2>
+  <p>In order to ensure access to only your personal notes, you need an user account! Accounts are free and only require a valid email address, the server does not care about your name or whatever.</p>
+  <code>
+    <pre>$ > cn signup mail@example.com</pre>
+  </code>
+</section>
+
+<section>
+  <h2>
+    <span>Usage</span>
+  </h2>
+  <p>As you are now the proud owner of an account you can start writing notes! Isn't that awesome? Just stay in your cozy shell environment and use <strong class="clinotes"><span>CLI</span>Notes</strong> to store useless or even meaningful notes from your command line! But beware of the missing encryption 😢</p>
+  <code>
+    <pre>$ > cn add This is a note from CLI!</pre>
+  </code>
+</section>
+
+<section id="github">
+  <h2>
+    <span>GitHub</span>
+  </h2>
+  <p>All sources of the server and the command line client are available at GitHub! There is no need to whine for new features, you can add them by yourself! Encryption for example? 😘</p>
+  <p class="downloads">
+    <a class="github-button" href="https://github.com/clinotes/server" data-style="mega" aria-label="Watch clinotes/server on GitHub">&nbsp;CLINotes server</a> <a class="github-button" href="https://github.com/clinotes/client" data-style="mega" aria-label="Watch clinotes/server on GitHub">&nbsp;CLINotes client</a>
+  </p>
+  <p>The server runs perfectly using free <a href="https://heroku.com">Heroku</a> dynos and the free <a href="https://www.heroku.com/postgres">Postgres</a> database. Somewhere in the more or less near future there will be guide on how to setup your very own API server to store your notes on your private infrastructure. You will need a free <a href="https://postmarkapp.com">Postmark</a> account for email delivery and if you plan to charge for subscriptions (draft available in server and client) you need a <a href="https://stripe.com">Stripe</a> account as well.</p>
+</section>
+
+<section id="caution">
+  <p>Caution: This is a free and open source side-project created just for fun. Neither should you rely on this tool and services, nor should you put any sensitive information in it. All code is released under the GPLv3 license!</p>
+</section>
